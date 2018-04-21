@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tiles</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script src="pure-swipe.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="swipe"></div>
+</body>
+<script type="text/javascript">
+	document.addEventListener('swiped-up', function(e){
+		document.getElementById('swipe').innerHTML = "up";
+	});
+	document.addEventListener('swiped-down', function(e){
+		document.getElementById('swipe').innerHTML = "down";	
+	});
+	document.addEventListener('swiped-left', function(e){
+		document.getElementById('swipe').innerHTML = "left";
+	});
+	document.addEventListener('swiped-right', function(e){
+		document.getElementById('swipe').innerHTML = "right";
+	});
+</script>
+</html>
