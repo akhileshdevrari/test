@@ -11,17 +11,22 @@
 <div id="swipe"></div>
 </body>
 <script type="text/javascript">
+	var num = 0;
 	document.addEventListener('swiped-up', function(e){
-		document.getElementById('swipe').innerHTML = "up";
+		document.getElementById('swipe').innerHTML = "up "+num;
+		num++;
 	});
 	document.addEventListener('swiped-down', function(e){
-		document.getElementById('swipe').innerHTML = "down";	
+		document.getElementById('swipe').innerHTML = "down "+num;
+		num++;	
 	});
 	document.addEventListener('swiped-left', function(e){
-		document.getElementById('swipe').innerHTML = "left";
+		document.getElementById('swipe').innerHTML = "left "+num;
+		num++;
 	});
 	document.addEventListener('swiped-right', function(e){
-		document.getElementById('swipe').innerHTML = "right";
+		document.getElementById('swipe').innerHTML = "right "+num;
+		num++;
 	});
 </script>
 </html>
